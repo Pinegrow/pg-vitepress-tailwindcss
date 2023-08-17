@@ -1,0 +1,57 @@
+{
+  "name": "pg-vitepress-tailwindcss",
+  "version": "0.0.0",
+  "homepage": "https://pg-vitepress-tailwindcss.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinegrow/pg-vitepress-tailwindcss.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs  --host",
+    "now": "npm run build && npm run preview",
+    "build": "vitepress build docs",
+    "preview": "vitepress serve docs",
+    "typecheck": "vue-tsc --noEmit",
+    "vue-devtools": "vue-devtools",
+    "lint": "npm run lint:fix && npm run format",
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write . '!public'"
+  },
+  "engines": {
+    "node": "^14.18 || >= 16.0.0"
+  },
+  "dependencies": {
+    "vue": "3.2.47",
+    "@vueuse/core": "^10.0.2",
+    "@vueuse/head": "^1.1.26",
+    "defu": "^6.1.2"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.51",
+    "@pinegrow/tailwindcss-plugin": "^3.0.1",
+    "@pinegrow/vite-plugin": "^3.0.8",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@unocss/preset-icons": "^0.51.4",
+    "@vue/devtools": "^6.5.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "npm-run-all": "^4.1.5",
+    "ofetch": "^1.0.1",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0",
+    "unocss": "^0.51.4",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite-plugin-vue-devtools": "^0.0.22",
+    "vue-tsc": "^1.2",
+    "@types/node": "^18.6.1",
+    "vitepress": "^1.0.0-rc.4"
+  },
+  "web-types": "web-types.json"
+}
