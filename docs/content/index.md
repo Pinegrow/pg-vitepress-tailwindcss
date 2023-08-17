@@ -25,7 +25,7 @@ features:
 ---
 
 <script setup>
-import SampleCard from './.vitepress/theme/components/SampleCard.vue'
+import SampleCard from '../.vitepress/theme/components/SampleCard.vue'
 </script>
 
 <SampleCard />
