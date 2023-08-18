@@ -10,6 +10,8 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "isolatedModules": true,
+    /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+    // "baseUrl": "./",
     "paths": {
       "@/*": ["./docs/.vitepress/theme/*"],
       "~/*": ["./docs/.vitepress/theme/*"],
@@ -33,7 +35,11 @@
     "docs/.**/**/*.vue",
     "docs/.**/**/**/*.ts",
     "docs/.**/**/**/*.tsx",
-    "docs/.**/**/**/*.vue"
+    "docs/.**/**/**/*.vue",
+
+    /* Take care to amend the path to reflect the actual paths used in your project. */
+    "docs/components.d.ts",
+    "docs/auto-imports.d.ts"
   ],
   "exclude": ["**/node_modules/**", "**/dist/**"]
 }
