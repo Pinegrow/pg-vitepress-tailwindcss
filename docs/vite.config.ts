@@ -17,7 +17,7 @@ export default defineConfig({
       tailwindcss: {
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
         configPath: '../tailwind.config.ts',
-        cssPath: '@/tailwind.css',
+        cssPath: '@/assets/css/tailwind.css',
       },
       // plugins: [
       //   {

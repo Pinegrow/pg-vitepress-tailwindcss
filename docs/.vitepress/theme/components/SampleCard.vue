@@ -38,7 +38,7 @@
         >
       </div>
     </div>
-    <BaseButton label="Quick Start" to="quick-start" :variant="solid" />
+    <BaseButton label="Quick Start" to="quick-start" variant="solid" />
   </div>
 </template>
 <style scoped></style>
