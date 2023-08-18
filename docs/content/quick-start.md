@@ -8,6 +8,8 @@ slug: quick-start
 
 This is a starter template that pre-includes the [Pinegrow Vite Plugin](https://www.npmjs.com/package/@pinegrow/vitepress-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
+This Awesome Static Site (which is also a single-page application) is powered by Vitepress and Tailwind CSS. This template demonstrates how a custom theme can be applied to an existing Vitepress site and easily designed in Vue Designer. It keeps the site within the 'docs' sub-folder and holds the Vitepress config, app entry, and custom theme within the standard '.vitepress' folder that comes with any Vitepress project.
+
 Demo - https://pg-vitepress-tailwindcss.netlify.app/
 
 ## Vue Designer
