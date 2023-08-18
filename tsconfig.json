@@ -17,6 +17,7 @@
       "~/*": ["./docs/.vitepress/theme/*"],
       "~~/*": ["./docs/.vitepress/*"]
     },
+    "types": ["node"],
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "skipLibCheck": true,
     "allowJs": true,
