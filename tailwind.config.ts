@@ -24,7 +24,7 @@ export default {
   get content() {
     const _content = [
       './index.html',
-      './docs/.vitepress/theme/**/*.{html,vue,svelte,astro,js,ts,jsx,tsx,md,mdx}',
+      './docs/.vitepress/theme/**/*.{html,vue,svelte,astro,js,cjs,ts,cts,mts,jsx,tsx,md,mdx}',
     ]
     return process.env.NODE_ENV === 'production'
       ? _content

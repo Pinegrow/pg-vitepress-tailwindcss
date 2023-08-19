@@ -24,23 +24,11 @@
     "strict": false
   },
   "include": [
-    "types/**/*.d.ts",
-    "docs/*",
-    "docs/*.tsx",
-    "docs/*.ts",
-    "docs/**/*.vue",
-    "docs/**/*.tsx",
-    "docs/**/*.ts",
-    "docs/.**/**/*.ts",
-    "docs/.**/**/*.tsx",
-    "docs/.**/**/*.vue",
-    "docs/.**/**/**/*.ts",
-    "docs/.**/**/**/*.tsx",
-    "docs/.**/**/**/*.vue",
-
-    /* Take care to amend the path to reflect the actual paths used in your project. */
-    "docs/components.d.ts",
-    "docs/auto-imports.d.ts"
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.vue",
+    "**/.vitepress/**/*",
+    "docs/**/*"
   ],
   "exclude": ["**/node_modules/**", "**/dist/**"]
 }
