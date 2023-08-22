@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed } from 'vue'
-  import { useNav } from '~/composables/nav'
+  import { useNav } from '@/composables/nav'
 
   import { useData } from 'vitepress'
   const { site, frontmatter } = useData()
@@ -28,7 +28,7 @@
                 <h5 class="font-extrabold mb-0 ml-2">Vue Designer</h5>
               </a>
             </div>
-            <NavBarDesktopTabs
+            <NavBarDesktopMenu
               :navlinks="desktopNavTabs"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"

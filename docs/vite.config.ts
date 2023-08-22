@@ -45,7 +45,7 @@ export default defineConfig({
         // 'vue/macros',
         // '@vueuse/head',
         // '@vueuse/core',
-        // 'pinia',
+        'pinia',
       ],
       dirs: [
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */

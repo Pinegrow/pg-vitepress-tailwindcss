@@ -3,9 +3,9 @@
   import type { PropType } from 'vue'
   import type { RouteLocationRaw } from 'vue-router'
   import { defu } from 'defu'
-  import { classNames } from '~/utils'
-  import { colors } from '~/utils/colors'
-  import appConfig from '~/ui'
+  import { classNames } from '@/utils'
+  import { colors } from '@/utils/colors'
+  import appConfig from '@/ui'
 
   const props = defineProps({
     type: {

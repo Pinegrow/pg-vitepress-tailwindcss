@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { computed } from 'vue'
   import { useHead, useSeoMeta } from 'unhead'
-  import { checkDarkTheme } from '~/composables/dark-color-scheme-check'
+  import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
   import type { Script } from '@unhead/schema'
   type TurboScript = Script & { once: true }
   import { useData } from 'vitepress'
