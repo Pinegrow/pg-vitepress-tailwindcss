@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import { liveDesigner } from '@pinegrow/vite-plugin'
-import AutoImportComponents from 'unplugin-vue-components/vite'
+// import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
@@ -57,20 +57,22 @@ export default defineConfig({
     }),
     // ...
     // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
-    AutoImportComponents({
-      /* Take care to amend any paths to reflect the actual paths used in your project. */
+    // Bug report - https://github.com/vuejs/vitepress/discussions/2836
 
-      dirs: ['./.vitepress/theme/components'],
+    // AutoImportComponents({
+    //   /* Take care to amend any paths to reflect the actual paths used in your project. */
 
-      // allow auto load markdown components under ./src/components/
-      extensions: ['vue', 'md'],
+    //   dirs: ['./.vitepress/theme/components'],
 
-      // allow auto import and register components used in markdown
-      include: [/.vue$/, /.vue?vue/, /.md$/],
+    //   // allow auto load markdown components under ./src/components/
+    //   extensions: ['vue', 'md'],
 
-      // resolvers: [], // Auto-import using resolvers
-      dts: 'components.d.ts',
-    }),
+    //   // allow auto import and register components used in markdown
+    //   include: [/.vue$/, /.vue?vue/, /.md$/],
+
+    //   // resolvers: [], // Auto-import using resolvers
+    //   dts: 'components.d.ts',
+    // }),
     Unocss({
       presets: [
         presetIcons({

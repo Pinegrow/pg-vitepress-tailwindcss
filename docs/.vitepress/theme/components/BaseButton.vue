@@ -6,6 +6,7 @@
   import { classNames } from '@/utils'
   import { colors } from '@/utils/colors'
   import appConfig from '@/ui'
+  import BaseIcon from '@/components/BaseIcon.vue'
 
   const props = defineProps({
     type: {

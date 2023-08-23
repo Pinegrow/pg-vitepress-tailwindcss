@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+  import BaseButton from '@/components/BaseButton.vue'
 
   const props = defineProps({
     name: {

@@ -26,7 +26,11 @@
     },
     htmlAttrs: { lang: 'en-US' },
     meta: [
-      // { property: 'keywords', content: route?.meta.tags?.toString() },
+      { property: 'charset', content: 'utf-8' },
+      {
+        property: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
       { property: 'author', content: author },
       {
         property: 'twitter:image',
