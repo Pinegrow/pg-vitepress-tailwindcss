@@ -1,10 +1,6 @@
 <script setup lang="ts">
   import { computed } from 'vue'
   import { useNav } from '@/composables/nav'
-  import NavBarDesktopMenu from '@/components/NavBarDesktopMenu.vue'
-  import NavBarMobileMenu from '@/components/NavBarMobileMenu.vue'
-  import NavBarMobileMenuButton from '@/components/NavBarMobileMenuButton.vue'
-  import DarkModeSwitch from '@/components/DarkModeSwitch.vue'
 
   import { useData } from 'vitepress'
   const { site, frontmatter } = useData()

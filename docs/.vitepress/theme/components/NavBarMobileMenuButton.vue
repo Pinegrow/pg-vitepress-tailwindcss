@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { useMobileMenu } from '@/composables/mobile-menu'
-  import BaseButton from '@/components/BaseButton.vue'
 
   const { isMobileMenuOpen, openMobileMenu } = useMobileMenu()
 </script>

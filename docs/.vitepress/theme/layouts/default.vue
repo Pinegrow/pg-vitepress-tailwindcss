@@ -1,11 +1,6 @@
 <script setup lang="ts">
   import { VPHomeHero } from 'vitepress/theme'
   import { useData } from 'vitepress'
-  import MetaTags from '@/components/MetaTags.vue'
-  import NavBar from '@/components/NavBar.vue'
-  import BaseButton from '@/components/BaseButton.vue'
-  import TheHeader from '@/components/TheHeader.vue'
-  import TheFooter from '@/components/TheFooter.vue'
   const { site, frontmatter } = useData()
 </script>
 <template>

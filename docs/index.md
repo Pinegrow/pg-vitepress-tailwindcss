@@ -24,8 +24,4 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<script setup lang="ts">
-import SampleCard from '@/components/SampleCard.vue'
-</script>
-
 <SampleCard />
