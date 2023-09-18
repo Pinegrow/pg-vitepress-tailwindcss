@@ -98,46 +98,46 @@ const pg_colors = {
     900: '#831843',
   },
   primary: {
-    50: '#ebf0f7',
-    100: '#cfddef',
-    200: '#b2cae6',
-    300: '#94b7de',
-    400: '#74a4d5',
-    500: '#4e92cd',
-    600: '#0681c4',
-    700: '#0676b3',
-    800: '#056ba3',
-    900: '#056193',
-    950: '#045683',
-    DEFAULT: '#044c74',
+    50: '#ecf2f8',
+    100: '#d2e1f2',
+    200: '#b7d0eb',
+    300: '#9cbfe4',
+    400: '#7fafdd',
+    500: '#5e9fd6',
+    600: '#3190cf',
+    700: '#2d84bd',
+    800: '#2978ac',
+    900: '#256c9b',
+    950: '#21618b',
+    DEFAULT: '#1d557a',
   },
   secondary: {
-    50: '#ebedf1',
-    100: '#cad1df',
-    200: '#a8b5cd',
-    300: '#879abb',
-    400: '#6581aa',
-    500: '#406898',
-    600: '#045087',
-    700: '#04497c',
-    800: '#034370',
-    900: '#033c65',
-    950: '#03365a',
-    DEFAULT: '#022f50',
+    50: '#ebedf0',
+    100: '#c9cfdb',
+    200: '#a7b1c7',
+    300: '#8595b3',
+    400: '#637aa0',
+    500: '#3f608c',
+    600: '#0c4779',
+    700: '#0b416f',
+    800: '#0a3b65',
+    900: '#09355b',
+    950: '#083051',
+    DEFAULT: '#072a48',
   },
   tertiary: {
-    50: '#eff4fa',
-    100: '#dae6f5',
-    200: '#c5d8f0',
-    300: '#b0cbeb',
-    400: '#9abee6',
-    500: '#83b1e1',
-    600: '#6aa4dc',
-    700: '#6196c9',
-    800: '#5888b7',
-    900: '#507ba5',
-    950: '#476e93',
-    DEFAULT: '#3f6182',
+    50: '#fef3f0',
+    100: '#ffe6dd',
+    200: '#ffd9ca',
+    300: '#ffcbb7',
+    400: '#ffbea4',
+    500: '#fdb092',
+    600: '#faa380',
+    700: '#e59575',
+    800: '#d0886b',
+    900: '#bc7a60',
+    950: '#a86d56',
+    DEFAULT: '#94604c',
   },
   neutral: {
     50: '#ebebeb',
@@ -216,11 +216,22 @@ const pg_fonts = {
   serif: ["'Kalam', sans-serif"],
 }
 
+const pg_font_urls = [
+  'https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Kalam:300,400,700&display=swap',
+]
+
 const pg_backgrounds = {
   'design-image':
-    "url('https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=1080')",
+    "url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI3fHxzdW5zZXR8ZW58MHx8fHwxNjk1MDMwMDg2fDA&ixlib=rb-4.0.3&q=85')",
   'design-image-large':
-    "url('https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=2000')",
+    "url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI3fHxzdW5zZXR8ZW58MHx8fHwxNjk1MDMwMDg2fDA&ixlib=rb-4.0.3&q=85')",
+}
+
+const pg_background_urls = {
+  'design-image':
+    'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI3fHxzdW5zZXR8ZW58MHx8fHwxNjk1MDMwMDg2fDA&ixlib=rb-4.0.3&q=85',
+  'design-image-large':
+    'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDI3fHxzdW5zZXR8ZW58MHx8fHwxNjk1MDMwMDg2fDA&ixlib=rb-4.0.3&q=85',
 }
 
 /* Pinegrow generated Design Panel End */
@@ -229,4 +240,4 @@ const pg_backgrounds = {
 /* prettier-disable */
 /* @ts-nocheck */
 
-export { pg_colors, pg_fonts, pg_backgrounds }
+export { pg_colors, pg_fonts, pg_font_urls, pg_backgrounds, pg_background_urls }

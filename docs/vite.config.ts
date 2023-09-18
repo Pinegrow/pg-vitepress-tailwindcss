@@ -18,6 +18,8 @@ export default defineConfig({
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
         configPath: '../tailwind.config.ts',
         cssPath: '@/assets/css/tailwind.css',
+        // restartOnThemeUpdate: true,
+        // restartOnConfigUpdate: true,
       },
       // plugins: [
       //   {
