@@ -22,11 +22,11 @@ import '@/assets/css/tailwind.css'
 
 // import { h } from 'vue'
 // import Theme from 'vitepress/theme'
+import { Theme, defineConfigWithTheme } from 'vitepress'
 import Layout from '@/layouts/default.vue'
 import pinia from '@/plugins/pinia'
-import '@/plugins/youtube.client'
 
-export default {
+export default <Theme>{
   // extends: Theme,
   // Layout: () => {
   //   return h(Theme.Layout, null, {

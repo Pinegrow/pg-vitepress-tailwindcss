@@ -1,5 +1,10 @@
 <script setup lang="ts">
+  import { onMounted } from 'vue'
   import vueDesignerLogo from '@/assets/images/vue-designer.svg'
+
+  onMounted(() => {
+    import('@/plugins/youtube.client')
+  })
   const showTitle = ref(true)
 </script>
 <template>
