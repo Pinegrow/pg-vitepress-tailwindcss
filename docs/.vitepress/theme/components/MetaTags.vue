@@ -54,6 +54,7 @@
     description,
     ogTitle: title,
     ogDescription: description,
+    ogType: 'website',
     ogImage: imgUrl.value,
     ogImageAlt: title,
     // og:image:width
@@ -69,7 +70,8 @@
     twitterDescription: description,
     twitterImage: imgUrl.value,
     twitterImageAlt: title,
-    twitterSite: url,
+    twitterSite: '@vuedesigner',
+    twitterCreator: '@techakayy',
     twitterCard: 'summary_large_image',
   })
 
