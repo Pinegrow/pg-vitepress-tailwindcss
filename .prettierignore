@@ -28,7 +28,9 @@ dist-ssr
 *.sln
 *.sw?
 
-.iles-ssg-temp/
+!docs/.vitepress
+docs/.vitepress/cache
+docs/.vitepress/dist
 
 # Pinegrow
 _pgbackup
