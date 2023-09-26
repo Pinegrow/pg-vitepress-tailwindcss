@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { VPHomeHero } from 'vitepress/theme'
+  // import { VPHomeHero } from 'vitepress/theme'
   import { useData } from 'vitepress'
   const { site, frontmatter } = useData()
   //TODO: MetaTags not loading correctly
@@ -62,7 +62,7 @@
           </div>
 
           <div v-else>
-            <VPHomeHero />
+            <!-- <VPHomeHero /> -->
             <Content />
           </div>
         </div>

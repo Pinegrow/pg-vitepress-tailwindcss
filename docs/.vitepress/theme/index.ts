@@ -24,6 +24,7 @@ import '@/assets/css/tailwind.css'
 // import Theme from 'vitepress/theme'
 import Layout from '@/layouts/default.vue'
 import pinia from '@/plugins/pinia'
+import '@/plugins/youtube.client'
 
 export default {
   // extends: Theme,

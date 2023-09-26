@@ -26,6 +26,7 @@
     "@vueuse/core": "^10.0.2",
     "@vueuse/head": "^1.1.26",
     "defu": "^6.1.2",
+    "lite-youtube-embed": "^0.2.0",
     "pinia": "^2.1.6",
     "vee-validate": "^4.11.6",
     "vue": "^3.3.4"

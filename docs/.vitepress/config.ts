@@ -27,4 +27,12 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
   },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag === 'lite-youtube',
+      },
+    },
+  },
 })

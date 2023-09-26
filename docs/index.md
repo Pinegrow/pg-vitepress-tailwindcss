@@ -24,4 +24,6 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<SampleCard />
+<HeroSection/>
+<AboutTemplate/>
+<WalkThrough/>
