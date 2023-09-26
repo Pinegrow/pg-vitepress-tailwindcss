@@ -2,6 +2,7 @@ export default {
   title: `Vue Designer`,
   description: 'Vue Designer Vitepress Tailwind CSS - Quick start template',
   author: 'Pinegrow',
+  url: 'https://pg-vitepress-tailwindcss.netlify.app',
   nav: [
     { text: 'Home', link: '/' },
     { text: 'Quick Start', link: '/quick-start' },

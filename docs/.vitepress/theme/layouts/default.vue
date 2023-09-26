@@ -2,7 +2,9 @@
   import { VPHomeHero } from 'vitepress/theme'
   import { useData } from 'vitepress'
   const { site, frontmatter } = useData()
+  //TODO: MetaTags not loading correctly
 </script>
+
 <template>
   <div>
     <MetaTags />

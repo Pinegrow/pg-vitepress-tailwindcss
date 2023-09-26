@@ -1,18 +1,21 @@
 <script setup lang="ts">
-  import { computed } from 'vue'
   import { useHead, useSeoMeta } from 'unhead'
   import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
   import type { Script } from '@unhead/schema'
   type TurboScript = Script & { once: true }
+
+  import { computed } from 'vue'
   import { useData } from 'vitepress'
 
+  import siteDefn from '@/site'
+  import image from '@/screenshots/image.jpg'
   import { pg_font_urls } from '../../../../themes/pg-tailwindcss/tokens.mjs'
 
   const link: any = [
     {
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/favicon.ico',
+      href: '/favicon.svg',
     },
   ]
   const noscript: any = []
@@ -37,47 +40,55 @@
     )
   }
 
+  const { title, description, url, author } = siteDefn
+
   const { site, frontmatter } = useData()
-  const { title, description } = site.value
-  const author = 'Pinegrow'
+  const imgUrl = computed(() => `${site.value.base}${image}`)
 
   useSeoMeta({
-    title,
-    ogTitle: title,
+    // charset: 'utf-8',
+    // author,
+    // viewport: 'width=device-width, initial-scale=1',
+    // keywords: route.meta.tags?.toString(),
+    // title,
     description,
+    ogTitle: title,
     ogDescription: description,
-    ogImage: 'https://example.com/image.png',
+    ogImage: imgUrl.value,
+    ogImageAlt: title,
+    // og:image:width
+    // og:image:height
+    // og:image:alt
+    // og:image: type
+    // og:image: secure_url
+    ogUrl: url,
+    ogSiteName: title,
+    // og: locale
+    // og: type
+    twitterTitle: title,
+    twitterDescription: description,
+    twitterImage: imgUrl.value,
+    twitterImageAlt: title,
+    twitterSite: url,
     twitterCard: 'summary_large_image',
   })
 
   useHead({
-    title,
+    // title,
     titleTemplate: (titleChunk) => {
       return titleChunk ? `${titleChunk} - ${title}` : title
     },
     htmlAttrs: { lang: 'en-US' },
     meta: [
-      { property: 'charset', content: 'utf-8' },
+      { name: 'charset', content: 'utf-8' },
       {
-        property: 'viewport',
+        name: 'viewport',
         content: 'width=device-width, initial-scale=1',
       },
-      { property: 'author', content: author },
+      { name: 'author', content: author },
       {
-        property: 'twitter:image',
-        content: 'https://icons.vuetelescope.com/vue.svg',
-      },
-      {
-        property: 'twitter:image:alt',
-        content: 'Vue',
-      },
-      {
-        property: 'twitter:site',
-        content: '@pinegrow',
-      },
-      {
-        property: 'twitter:card',
-        content: 'summary',
+        name: 'keywords',
+        content: computed(() => frontmatter.value?.tags).value,
       },
     ],
     script: [{ innerHTML: checkDarkTheme, once: true } as TurboScript],

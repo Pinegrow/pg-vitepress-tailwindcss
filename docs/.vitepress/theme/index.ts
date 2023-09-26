@@ -17,12 +17,13 @@
 // import Layout from './layouts/default.vue'
 
 import 'uno.css'
+// import '@/assets/css/main.css'
+import '@/assets/css/tailwind.css'
 
 // import { h } from 'vue'
 // import Theme from 'vitepress/theme'
 import Layout from '@/layouts/default.vue'
-// import '@/assets/css/main.css'
-import '@/assets/css/tailwind.css'
+import pinia from '@/plugins/pinia'
 
 export default {
   // extends: Theme,
@@ -33,6 +34,7 @@ export default {
   // },
   Layout,
   enhanceApp({ app, router, siteData }) {
+    app.use(pinia)
     // ...
   },
 }

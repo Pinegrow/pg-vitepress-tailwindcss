@@ -7,8 +7,10 @@ import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+
 // import VueDevTools from 'vite-plugin-vue-devtools'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     liveDesigner({
@@ -47,24 +49,23 @@ export default defineConfig({
         'vue-router',
         // 'vue-i18n',
         // 'vue/macros',
-        // '@vueuse/head',
-        // '@vueuse/core',
+        '@vueuse/head',
+        '@vueuse/core',
         'pinia',
       ],
       dirs: [
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-        // 'src/composables',
-        // 'src/stores',
+        '.vitepress/theme/composables',
+        '.vitepress/theme/utils',
+        '.vitepress/theme/stores',
       ],
       vueTemplate: true,
       dts: 'auto-imports.d.ts',
     }),
-    // ...
-    // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
-    // Bug report - https://github.com/vuejs/vitepress/discussions/2836
 
+    // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
     AutoImportComponents({
-      /* Take care to amend any paths to reflect the actual paths used in your project. */
+      /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
 
       dirs: ['./.vitepress/theme/components'],
 
@@ -72,11 +73,12 @@ export default defineConfig({
       extensions: ['vue', 'md'],
 
       // allow auto import and register components used in markdown
-      include: [/\.vue$/, /\.vue\?vue/, /\.mdx?/],
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/],
 
       // resolvers: [], // Auto-import using resolvers
       dts: 'components.d.ts',
     }),
+
     Unocss({
       presets: [
         presetIcons({
