@@ -43,7 +43,7 @@
   const { title, description, url, author } = siteDefn
 
   const { site, frontmatter } = useData()
-  const imgUrl = computed(() => `${site.value.base}${image}`)
+  const imgUrl = new URL(image, url).href
 
   useSeoMeta({
     // charset: 'utf-8',
@@ -55,7 +55,7 @@
     ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    ogImage: imgUrl.value,
+    ogImage: imgUrl,
     ogImageAlt: title,
     // og:image:width
     // og:image:height
@@ -68,7 +68,7 @@
     // og: type
     twitterTitle: title,
     twitterDescription: description,
-    twitterImage: imgUrl.value,
+    twitterImage: imgUrl,
     twitterImageAlt: title,
     twitterSite: '@vuedesigner',
     twitterCreator: '@techakayy',
