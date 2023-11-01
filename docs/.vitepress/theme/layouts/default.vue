@@ -2,17 +2,17 @@
   // import { VPHomeHero } from 'vitepress/theme'
   import { useData } from 'vitepress'
   const { site, frontmatter } = useData()
-  //TODO: MetaTags not loading correctly
+  //TODO: HeadAndMeta not loading correctly
 </script>
 
 <template>
   <div>
-    <MetaTags />
+    <HeadAndMeta />
     <div
       class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
     >
       <NavBar class="fixed bg-white dark:bg-neutral-950 shadow z-20" />
-      <div class="mt-24 shadow">
+      <main class="mt-24 shadow">
         <div>
           <div v-if="frontmatter.slug !== 'home'">
             <TheHeader>
@@ -66,7 +66,7 @@
             <Content />
           </div>
         </div>
-      </div>
+      </main>
       <TheFooter />
     </div>
   </div>

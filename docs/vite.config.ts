@@ -13,28 +13,6 @@ import presetIcons from '@unocss/preset-icons'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    liveDesigner({
-      iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-      devtoolsKey: 'devtools', // see app.ts
-      tailwindcss: {
-        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-        configPath: '../tailwind.config.ts',
-        cssPath: '@/assets/css/tailwind.css',
-        // themePath: false, // Set to false so that Design Panel is not used
-        // restartOnConfigUpdate: true,
-        restartOnThemeUpdate: true,
-      },
-      // plugins: [
-      //   {
-      //     name: 'My Awesome Lib 3.0',
-      //     key: 'my-awesome-lib',
-      //     pluginPath: fileURLToPath(
-      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
-      //     ),
-      //   },
-      // ],
-    }),
-    // ...
     // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
     AutoImportAPIs({
       include: [
@@ -87,6 +65,28 @@ export default defineConfig({
       ],
     }),
     // VueDevTools(),
+    liveDesigner({
+      iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
+      devtoolsKey: 'devtools', // see app.ts
+      tailwindcss: {
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+        configPath: '../tailwind.config.ts',
+        cssPath: '@/assets/css/tailwind.css',
+        // themePath: false, // Set to false so that Design Panel is not used
+        // restartOnConfigUpdate: true,
+        restartOnThemeUpdate: true,
+      },
+      // plugins: [
+      //   {
+      //     name: 'My Awesome Lib 3.0',
+      //     key: 'my-awesome-lib',
+      //     pluginPath: fileURLToPath(
+      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //     ),
+      //   },
+      // ],
+    }),
+    // ...
   ],
   // ...
   resolve: {
