@@ -15,7 +15,7 @@ import presetIcons from '@unocss/preset-icons'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // srcDir must be relative to root
+  // srcDir must be relative to root (docs)
   srcDir: '.vitepress/theme/pages',
   title,
   titleTemplate: `:title - ${title}`,
