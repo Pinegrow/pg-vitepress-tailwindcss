@@ -41,7 +41,19 @@ Open your project in Vue Designer and follow the instructions displayed in the C
 ### Start your development server
 
 ```bash
-npm run dev # SPA during development
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build # MPA SSG (islands architecture)
+```
+
+### Analyze
+
+```bash
+npm run analyze # bundle sizes
 ```
 
 ### Preview
@@ -55,14 +67,6 @@ npm run now # build & preview
 ```bash
 npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to run lighthouse on entire site (all pages)
 ```
-
-### Build
-
-```bash
-npm run build # MPA SSG (islands architecture)
-```
-
-And you will see the generated file in `dist` that's ready to be served.
 
 ### Deploy to Netlify
 
