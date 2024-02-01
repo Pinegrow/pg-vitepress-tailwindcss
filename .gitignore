@@ -42,3 +42,5 @@ pinegrow.json
 auto-imports.d.ts
 components.d.ts
 composables.d.ts
+## rollup visualizer
+stats.html
