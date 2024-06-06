@@ -1,0 +1,63 @@
+{
+  "name": "pg-vitepress-tailwindcss",
+  "version": "0.0.0",
+  "homepage": "https://pg-vitepress-tailwindcss.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinegrow/pg-vitepress-tailwindcss.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs  --host",
+    "now": "npm run build && npm run preview",
+    "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-vitepress-tailwindcss.netlify.app",
+    "build": "vitepress build docs",
+    "preview": "vitepress serve docs",
+    "typecheck": "vue-tsc --noEmit",
+    "vue-devtools": "vue-devtools",
+    "lint": "npm run lint:fix && npm run format",
+    "lint:fix": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
+    "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
+  },
+  "engines": {
+    "node": "^14.18 || >= 16.0.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.0.2",
+    "@vueuse/head": "^1.1.26",
+    "defu": "^6.1.2",
+    "lite-youtube-embed": "^0.2.0",
+    "pinia": "^2.1.6",
+    "vee-validate": "^4.11.6",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.51",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@pinegrow/tailwindcss-plugin": "^3.0.20",
+    "@pinegrow/vite-plugin": "^3.0.56",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^20.5.0",
+    "@unocss/preset-icons": "^0.57.2",
+    "@vue/devtools": "^6.5.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "npm-run-all": "^4.1.5",
+    "ofetch": "^1.0.1",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.4",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0",
+    "unocss": "^0.57.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite-plugin-vue-devtools": "^0.0.22",
+    "vitepress": "^1.2.3",
+    "vue-tsc": "^1.2"
+  },
+  "web-types": "web-types.json"
+}
