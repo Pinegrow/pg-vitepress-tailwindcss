@@ -11,7 +11,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 
-// import VueDevTools from 'vite-plugin-vue-devtools'
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
@@ -92,7 +92,7 @@ export default defineConfig({
           },
         },
       }),
-      // VueDevTools(),
+      VueDevTools(),
       liveDesigner({
         iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
         devtoolsKey: 'devtoolsKey', // see app.ts
@@ -115,7 +115,7 @@ export default defineConfig({
         //     name: 'My Awesome Lib 3.0',
         //     key: 'my-awesome-lib',
         //     pluginPath: fileURLToPath(
-        //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+        //       new URL('./web-types/my-awesome-lib.json', import.meta.url),
         //     ),
         //   },
         // ],

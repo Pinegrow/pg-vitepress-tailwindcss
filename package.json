@@ -35,8 +35,8 @@
   "devDependencies": {
     "@iconify/json": "^2.2.51",
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/tailwindcss-plugin": "^3.0.20",
-    "@pinegrow/vite-plugin": "^3.0.56",
+    "@pinegrow/tailwindcss-plugin": "^3.0.29",
+    "@pinegrow/vite-plugin": "^3.0.60",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.5.0",
@@ -55,7 +55,7 @@
     "unocss": "^0.57.2",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.1",
-    "vite-plugin-vue-devtools": "^0.0.22",
+    "vite-plugin-vue-devtools": "^7.3.6",
     "vitepress": "^1.2.3",
     "vue-tsc": "^1.2"
   },
