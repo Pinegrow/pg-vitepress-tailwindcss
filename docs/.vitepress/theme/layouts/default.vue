@@ -1,7 +1,10 @@
 <script setup lang="ts">
   // import { VPHomeHero } from 'vitepress/theme'
   import { useData } from 'vitepress'
-  const { site, frontmatter } = useData()
+  const { site, frontmatter, page } = useData()
+  const isHomePage = computed(() => {
+    return page.value.filePath === 'index.md'
+  })
   //TODO: HeadAndMeta not loading correctly
 </script>
 
@@ -14,7 +17,7 @@
       <NavBar class="fixed bg-white dark:bg-neutral-950 shadow z-20" />
       <main class="mt-24 shadow">
         <div>
-          <div v-if="frontmatter.slug !== 'home'">
+          <div v-if="!isHomePage">
             <TheHeader>
               <div>
                 <div class="flex items-center">

@@ -18,7 +18,8 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // srcDir must be relative to root (docs)
-  srcDir: '.vitepress/theme/pages',
+  srcDir: '.vitepress/theme',
+  outDir: 'dist',
   title,
   titleTemplate: `:title - ${title}`,
   description,
@@ -56,9 +57,9 @@ export default defineConfig({
         dirs: [
           /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
           // Path must be relative to Vitepress's srcDir
-          '../composables',
-          '../utils',
-          '../stores',
+          'composables',
+          'utils',
+          'stores',
         ],
         vueTemplate: true,
         dts: 'auto-imports.d.ts',
@@ -68,7 +69,7 @@ export default defineConfig({
       AutoImportComponents({
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
         // Path must be relative to Vitepress's srcDir
-        dirs: ['../components'],
+        dirs: ['components'],
 
         // allow auto load markdown components under ./src/components/
         extensions: ['vue', 'md'],
@@ -104,7 +105,7 @@ export default defineConfig({
         },
         tailwindcss: {
           /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-          configPath: '../tailwind.config.ts',
+          configPath: 'tailwind.config.ts',
           cssPath: '@/assets/css/tailwind.css',
           // themePath: false, // Set to false so that Design Panel is not used
           // restartOnConfigUpdate: true,
