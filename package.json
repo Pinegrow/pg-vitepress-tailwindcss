@@ -1,6 +1,7 @@
 {
   "name": "pg-vitepress-tailwindcss",
   "version": "0.0.0",
+  "type": "module",
   "homepage": "https://pg-vitepress-tailwindcss.netlify.app",
   "repository": {
     "type": "git",
