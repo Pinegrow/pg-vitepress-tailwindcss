@@ -1,0 +1,251 @@
+{
+  "files": {
+    "docs/.vitepress/theme/components/TheFooter.vue": {
+      "frameworks": [
+        "pg.tw.lib",
+        "vite-plugin-vue-devtools",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@unocss/preset-icons",
+        "@vue/devtools",
+        "@pinegrow/vite-plugin",
+        "vitepress",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/components/NavBarDesktopTabs.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "unplugin-auto-import",
+        "pg.vue.tree.painter",
+        "unplugin-vue-components",
+        "vitepress",
+        "@unocss/preset-icons",
+        "pg.css.grid",
+        "@vue/devtools",
+        "project",
+        "pg.image.overlay",
+        "@pinegrow/vite-plugin",
+        "pg.code-validator",
+        "pg.project.items",
+        "vue",
+        "pg.asset.manager",
+        "app_designer",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/components/SampleCard.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "unplugin-auto-import",
+        "vitepress",
+        "pg.css.grid",
+        "unplugin-vue-components",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "project",
+        "@unocss/preset-icons",
+        "pg.project.items",
+        "pg.asset.manager",
+        "@vue/devtools",
+        "app_designer",
+        "vue",
+        "@pinegrow/vite-plugin",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/layouts/default.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "unplugin-auto-import",
+        "pg.vue.tree.painter",
+        "unplugin-vue-components",
+        "vitepress",
+        "@unocss/preset-icons",
+        "pg.css.grid",
+        "@vue/devtools",
+        "project",
+        "pg.image.overlay",
+        "@pinegrow/vite-plugin",
+        "pg.code-validator",
+        "pg.project.items",
+        "vue",
+        "pg.asset.manager",
+        "app_designer",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/components/TheHeader.vue": {
+      "frameworks": [
+        "pg.tw.lib",
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "unplugin-auto-import",
+        "pg.css.grid",
+        "unplugin-vue-components",
+        "pg.image.overlay",
+        "vitepress",
+        "project",
+        "@unocss/preset-icons",
+        "pg.code-validator",
+        "pg.project.items",
+        "@vue/devtools",
+        "pg.asset.manager",
+        "app_designer",
+        "@pinegrow/vite-plugin",
+        "vue",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/components/NavBar.vue": {
+      "frameworks": [
+        "pg.tw.lib",
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "unplugin-auto-import",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "unplugin-vue-components",
+        "pg.code-validator",
+        "pg.project.items",
+        "vitepress",
+        "pg.asset.manager",
+        "@unocss/preset-icons",
+        "app_designer",
+        "@vue/devtools",
+        "@pinegrow/vite-plugin",
+        "project",
+        "vue",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/components/NavBarMobileMenu.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@unocss/preset-icons",
+        "@vue/devtools",
+        "@pinegrow/vite-plugin",
+        "vitepress",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "docs/.vitepress/theme/components/HeroSection.vue": {
+      "frameworks": [
+        "pg.tw.lib",
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "@pinegrow/vite-plugin",
+        "pg.css.grid",
+        "vitepress",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "unplugin-auto-import",
+        "app_designer",
+        "vue",
+        "@unocss/preset-icons",
+        "@vue/devtools",
+        "project",
+        "unplugin-vue-components",
+        "tw",
+        "pg.html"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["docs/.vitepress/theme/components/HeroSection.vue"],
+  "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
+  "frameworks": [
+    "pg.tw.lib",
+    "vite-plugin-vue-devtools",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "@pinegrow/vite-plugin",
+    "pg.css.grid",
+    "vitepress",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "unplugin-auto-import",
+    "app_designer",
+    "vue",
+    "@unocss/preset-icons",
+    "@vue/devtools",
+    "project",
+    "unplugin-vue-components",
+    "tw",
+    "pg.html"
+  ],
+  "urls": {
+    "docs/.vitepress/theme/components/TheFooter.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "docs/.vitepress/theme/components/NavBarDesktopTabs.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "docs/.vitepress/theme/components/SampleCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "docs/.vitepress/theme/layouts/default.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "docs/.vitepress/theme/components/TheHeader.vue": {
+      "open-page-views": [{ "w": 959, "h": 0 }]
+    },
+    "docs/.vitepress/theme/components/NavBar.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "docs/.vitepress/theme/components/NavBarMobileMenu.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "file:///Users/techakayy/Templates/pg-vue-vuetify/src/components/SampleCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "docs/.vitepress/theme/components/HeroSection.vue": {
+      "open-page-views": [{ "w": 962, "h": 0 }]
+    },
+    "http://localhost:5173/": { "open-page-views": [{ "w": 962, "h": 0 }] },
+    "http://localhost:5187/": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "http://localhost:5197/": { "open-page-views": [{ "w": 1024, "h": 0 }] }
+  },
+  "recent-classes": ["mt-32", "px-10", "bg-opacity-100", "opacity-1", "-z-10"],
+  "active-design-provider": "tw"
+}

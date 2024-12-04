@@ -6,7 +6,6 @@
     "type": "git",
     "url": "https://github.com/pinegrow/pg-vitepress-tailwindcss.git"
   },
-  "type": "module",
   "scripts": {
     "dev": "vitepress dev docs  --host",
     "now": "npm run build && npm run preview",
@@ -34,8 +33,8 @@
   "devDependencies": {
     "@iconify/json": "^2.2.51",
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/tailwindcss-plugin": "^3.0.29",
-    "@pinegrow/vite-plugin": "^3.0.60",
+    "@pinegrow/tailwindcss-plugin": "^3.0.33",
+    "@pinegrow/vite-plugin": "^3.0.65",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.5.0",
