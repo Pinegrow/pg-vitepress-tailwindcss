@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed } from 'vue'
-  import { useNav } from '@/composables/nav'
+  import { useNavMenu } from '@/composables/nav-menu'
 
   import { useData } from 'vitepress'
   const { site, frontmatter } = useData()
@@ -9,7 +9,7 @@
     return `/${frontmatter.value.slug}`
   })
 
-  const { navlinks } = useNav()
+  const { navlinks } = useNavMenu()
   const desktopNavTabs = computed(() => {
     return navlinks.value.slice(0, 2)
   })

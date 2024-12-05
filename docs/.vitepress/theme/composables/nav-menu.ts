@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import site from '@/site'
 
-export const useNav = () => {
+export const useNavMenu = () => {
   const navlinksFromConfig = site.nav
   const navlinks = computed(() => navlinksFromConfig)
 

@@ -166,26 +166,27 @@
     },
     "docs/.vitepress/theme/components/HeroSection.vue": {
       "frameworks": [
-        "pg.tw.lib",
-        "vite-plugin-vue-devtools",
         "pg.insight.events",
+        "vite-plugin-vue-devtools",
         "pg.vue.tree.painter",
         "@pinegrow/vite-plugin",
         "pg.css.grid",
-        "vitepress",
         "pg.image.overlay",
+        "vitepress",
         "pg.code-validator",
         "pg.project.items",
         "pg.asset.manager",
         "unplugin-auto-import",
         "app_designer",
-        "vue",
-        "@unocss/preset-icons",
         "@vue/devtools",
         "project",
+        "vue",
+        "@unocss/preset-icons",
         "unplugin-vue-components",
+        "tw.flowbite",
         "tw",
-        "pg.html"
+        "pg.html",
+        "pine.cone.lib"
       ]
     }
   },
@@ -193,26 +194,27 @@
   "open-pages": ["docs/.vitepress/theme/components/HeroSection.vue"],
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
-    "pg.tw.lib",
-    "vite-plugin-vue-devtools",
     "pg.insight.events",
+    "vite-plugin-vue-devtools",
     "pg.vue.tree.painter",
     "@pinegrow/vite-plugin",
     "pg.css.grid",
-    "vitepress",
     "pg.image.overlay",
+    "vitepress",
     "pg.code-validator",
     "pg.project.items",
     "pg.asset.manager",
     "unplugin-auto-import",
     "app_designer",
-    "vue",
-    "@unocss/preset-icons",
     "@vue/devtools",
     "project",
+    "vue",
+    "@unocss/preset-icons",
     "unplugin-vue-components",
+    "tw.flowbite",
     "tw",
-    "pg.html"
+    "pg.html",
+    "pine.cone.lib"
   ],
   "urls": {
     "docs/.vitepress/theme/components/TheFooter.vue": {
