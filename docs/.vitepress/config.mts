@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 import siteDefn from './theme/site'
-const { title, description, url } = siteDefn
 
 import { fileURLToPath, URL } from 'node:url'
 
@@ -10,8 +9,10 @@ import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 import VueDevTools from 'vite-plugin-vue-devtools'
+const { title, description, url } = siteDefn
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
@@ -26,6 +27,7 @@ export default defineConfig({
   sitemap: {
     hostname: url,
   },
+  cleanUrls: true,
   vue: {
     template: {
       compilerOptions: {
@@ -48,9 +50,8 @@ export default defineConfig({
         imports: [
           'vue',
           'vue-router',
-          // 'vue-i18n',
           // 'vue/macros',
-          '@vueuse/head',
+          unheadVueComposablesImports,
           '@vueuse/core',
           'pinia',
         ],
@@ -88,11 +89,11 @@ export default defineConfig({
             prefix: 'i-', // default prefix, do not change
           }),
         ],
-        content: {
-          pipeline: {
-            include: ['docs/.vitepress/**/*'],
-          },
-        },
+        // content: {
+        //   pipeline: {
+        //     include: ['docs/.vitepress/theme/**/*'],
+        //   },
+        // },
       }),
       VueDevTools(),
       liveDesigner({

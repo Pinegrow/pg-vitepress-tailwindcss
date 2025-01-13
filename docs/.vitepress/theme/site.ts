@@ -5,12 +5,44 @@
 export default {
   title: 'Vue Designer',
   description: 'Vue Designer Vitepress Tailwind CSS - Quick start template',
+  logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
   url: 'https://pg-vitepress-tailwindcss.netlify.app',
-  nav: [
-    { text: 'Home', link: '/' },
-    { text: 'Quick Start', link: '/quick-start' },
-    { text: 'Mardown', link: '/markdown-examples' },
-    { text: 'API', link: '/api-examples' },
-  ],
+  github: 'https://github.com/pinegrow/pg-vitepress-tailwindcss',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
+  defaultLocale: 'en', // default
+  identity: {
+    type: 'Organization',
+  } as any,
+  twitter: '@vuedesigner',
+  trailingSlash: false, // default
+  titleSeparator: '|', // default
+
+  navs: {
+    primary: [
+      {
+        title: 'Home',
+        icon: 'i-mdi-home',
+        to: '/',
+      },
+      {
+        title: 'Quick Start',
+        icon: 'i-mdi-home',
+        to: '/quick-start',
+      },
+    ],
+    secondary: [
+      {
+        title: 'Markdown',
+        icon: 'i-mdi-home',
+        to: '/markdown-examples',
+      },
+      {
+        title: 'API',
+        icon: 'i-mdi-home',
+        to: '/api-examples',
+      },
+    ],
+  },
 }

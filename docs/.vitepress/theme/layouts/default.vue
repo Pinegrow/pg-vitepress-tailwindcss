@@ -1,16 +1,32 @@
 <script setup lang="ts">
   // import { VPHomeHero } from 'vitepress/theme'
-  import { useData } from 'vitepress'
+  import siteMeta from '@/site'
+  import { useData, useRoute } from 'vitepress'
   const { site, frontmatter, page } = useData()
+
+  const route = useRoute()
+  const canonicalUrl = new URL(route.path, siteMeta.url)
+
   const isHomePage = computed(() => {
-    return page.value.filePath === 'index.md'
+    return page.value.relativePath === 'index.md'
   })
-  //TODO: HeadAndMeta not loading correctly
+
+  const pageMeta = computed(() => {
+    return {
+      title: page.value.title,
+      description: page.value.description,
+      ogImage: frontmatter.value.ogImage,
+      canonicalUrl: frontmatter.value.canonicalUrl || canonicalUrl,
+      generator: frontmatter.value.generator,
+      tags: frontmatter.value.tags,
+    }
+  })
+
+  useHeadAndMeta(pageMeta)
 </script>
 
 <template>
   <div>
-    <HeadAndMeta />
     <div
       class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
     >

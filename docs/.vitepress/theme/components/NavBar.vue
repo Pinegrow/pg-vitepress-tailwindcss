@@ -1,21 +1,5 @@
 <script setup lang="ts">
-  import { computed } from 'vue'
-  import { useNavMenu } from '@/composables/nav-menu'
-
-  import { useData } from 'vitepress'
-  const { site, frontmatter } = useData()
-
-  const currentPath = computed(() => {
-    return `/${frontmatter.value.slug}`
-  })
-
-  const { navlinks } = useNavMenu()
-  const desktopNavTabs = computed(() => {
-    return navlinks.value.slice(0, 2)
-  })
-  const mobileNavTabs = computed(() => {
-    return navlinks.value.slice(2, navlinks.value.length)
-  })
+  const { allNavs, navsPrimary, navsSecondary, currentPath } = useNavMenu()
 </script>
 <template>
   <div class="w-full">
@@ -24,34 +8,33 @@
         <div class="flex h-24 items-center justify-between">
           <div class="flex items-center justify-between w-full">
             <div class="flex flex-shrink-0 items-center">
-              <a href="/" class="text-primary-600 dark:text-primary-200">
-                <h5 class="font-extrabold mb-0 ml-2">Vue Designer</h5>
-              </a>
+              <TheLogo />
             </div>
-            <NavBarDesktopMenu
-              :navlinks="desktopNavTabs"
+            <NavPrimary
+              :navs="navsPrimary"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
             />
           </div>
           <DarkModeSwitch />
           <div class="-mr-2 items-center relative">
-            <NavBarMobileMenuButton
-              v-if="mobileNavTabs.length"
+            <NavHamburger
+              v-if="navsSecondary?.length"
               class="hidden sm:block"
             />
-            <NavBarMobileMenuButton v-if="navlinks.length" class="sm:hidden" />
-            <NavBarMobileMenu
-              class="absolute hidden mt-4 right-0 sm:flex sm:justify-end"
-              :navlinks="mobileNavTabs"
+            <NavHamburger v-if="allNavs.length" class="sm:hidden" />
+            <NavSecondary
+              v-if="navsSecondary?.length"
+              class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
+              :navs="navsSecondary"
               :current-path="currentPath"
             />
           </div>
         </div>
       </div>
-      <NavBarMobileMenu
+      <NavSecondary
         class="sm:hidden"
-        :navlinks="navlinks"
+        :navs="allNavs"
         :current-path="currentPath"
       />
     </nav>

@@ -1,18 +1,22 @@
-import { computed } from 'vue'
-import site from '@/site'
+import siteMeta from '@/site'
+import { useRoute } from 'vitepress'
 
 export const useNavMenu = () => {
-  const navlinksFromConfig = site.nav
-  const navlinks = computed(() => navlinksFromConfig)
+  const navs = siteMeta.navs
+
+  const allNavs = Object.values(navs).reduce((acc, navMenu) => {
+    return [...acc, ...navMenu]
+  }, [])
+
+  const currentRoute = useRoute()
+  const currentPath = computed(() => {
+    return currentRoute.path
+  })
 
   return {
-    navlinks,
+    allNavs,
+    navsPrimary: navs.primary,
+    navsSecondary: navs.secondary,
+    currentPath,
   }
-}
-
-export const isCurrentRoute = (navlink, currentPath) => {
-  if (currentPath === '/home') {
-    currentPath = '/'
-  }
-  return currentPath === navlink.link
 }

@@ -1,13 +1,3 @@
-// import devtools from '@vue/devtools'
-
-// // @ts-ignore
-// if (process.env.NODE_ENV === 'development') {
-//   // devtools.connect(/* host, port */)
-//   // (window as any) = devtools
-//   // @ts-ignore
-//   window.devtoolsKey = devtools
-// }
-
 // For customizing theme, make sure you install vue as a dependency
 // Refer to: https://vitepress.dev/guide/custom-theme
 // Refer to: https://vitepress.dev/guide/extending-default-theme#layout-slots
@@ -26,6 +16,7 @@ import type { Theme } from 'vitepress'
 import { defineConfigWithTheme } from 'vitepress'
 import Layout from '@/layouts/default.vue'
 import pinia from '@/plugins/pinia'
+import head from '@/plugins/head'
 
 export default {
   // extends: DefaultTheme,
@@ -36,6 +27,7 @@ export default {
   // },
   Layout,
   enhanceApp({ app, router, siteData }) {
+    app.use(head)
     app.use(pinia)
     // ...
   },

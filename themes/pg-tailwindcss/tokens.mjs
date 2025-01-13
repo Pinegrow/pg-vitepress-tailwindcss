@@ -1,5 +1,5 @@
 /* Pinegrow generated Design Panel Begin */
-/* eslint-disable */
+
 /* prettier-disable */
 /* @ts-nocheck */
 
@@ -215,12 +215,12 @@ const pg_colors = {
 }
 
 const pg_fonts = {
-  sans: ["'Caveat', sans-serif"],
-  serif: ["'Raleway', sans-serif"],
+  sans: ["'Fira Sans', sans-serif"],
+  serif: ["'Kalam', sans-serif"],
 }
 
 const pg_font_urls = [
-  'https://fonts.googleapis.com/css?family=Caveat:400,500,600,700|Raleway:100,200,300,400,500,600,700,800,900&display=swap',
+  'https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Kalam:300,400,700&display=swap',
 ]
 
 const pg_backgrounds = {

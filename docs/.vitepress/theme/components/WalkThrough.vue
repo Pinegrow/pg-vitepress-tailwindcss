@@ -1,12 +1,16 @@
 <script setup lang="ts">
-  import { onMounted } from 'vue'
   import vueDesignerLogo from '@/assets/images/vue-designer.svg'
 
-  onMounted(() => {
-    import('@/plugins/youtube.client')
+  // https://debbie.codes/blog/nuxt-lite-youtube-embeds/
+  import liteYoutubeEmbed from 'lite-youtube-embed?raw'
+  import 'lite-youtube-embed/src/lite-yt-embed.css'
+  useHead({
+    script: [{ innerHTML: liteYoutubeEmbed }],
   })
+
   const showTitle = ref(true)
 </script>
+
 <template>
   <div class="px-4 py-24 relative bg-primary-600 dark:bg-primary-200">
     <div class="container mx-auto flex flex-wrap items-center justify-center">
