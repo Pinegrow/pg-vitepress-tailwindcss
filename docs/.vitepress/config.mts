@@ -99,7 +99,6 @@ export default defineConfig({
       VueDevTools(),
       liveDesigner({
         iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-        devtoolsKey: 'devtoolsKey', // see app.ts
         dirs: {
           src: '@/',
           components: '@/components',
