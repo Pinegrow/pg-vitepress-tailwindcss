@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-import siteDefn from './theme/site'
+import siteMeta from './theme/site'
 
 import { fileURLToPath, URL } from 'node:url'
 
@@ -12,7 +12,7 @@ import presetIcons from '@unocss/preset-icons'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 import VueDevTools from 'vite-plugin-vue-devtools'
-const { title, description, url } = siteDefn
+const { title, description, url } = siteMeta
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
