@@ -2,7 +2,7 @@
 
 module.exports = {
   liveDesigner: {
-    /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+    // This file is not required from Vue Designer update v1.61
     configPath: './docs/.vitepress/config.mts',
     //... existing config
   },
